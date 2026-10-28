@@ -1,2 +1,31 @@
 # MGLWN_master
-This is the code library for the implementation of Multi-hop Graph Lifting Wavelet Network
+This is the code library for the implementation of Multi-hop Graph Lifting Wavelet Network[A Kolmogorov-Arnold-informed Interpretable Graph Wavelet Activation Network for Machine Fault Diagnosis](https://ieeexplore.ieee.org/document/11333912).
+
+![MGLWN-based-fault diagnosis](https://github.com/HazeDT/GWAN/blob/main/GWAN.jpg)
+
+
+# Note
+IIn GWAN, two critical components are designed, that is, graph wavelet activation convolution (GWAConv) layer and wavelet attention (WavAtt) layer. In GWAConv, the graph message passing is achieved using the wavelet Kolmogorov-Arnold layer with learnable scale and translation parameters to capture the robust fault features. While WavAtt layer decomposes the raw signal into low-frequency and high-frequency components to force the model to focus on the low-frequency components which is helpful for fault diagnosis.
+The wavelet Kolmogorov–Arnold layer in GWAN is from: [SWKAN: An Ante-Hoc and Post-Hoc Explainable Spectral Enhanced Wavelet Kolmogorov–Arnold Networks for Reliable Fault Diagnosis](https://ieeexplore.ieee.org/document/11298276).
+
+# sample data
+The data for running this code can be found in [PHMGNNBenchmark](https://github.com/HazeDT/PHMGNNBenchmark)
+
+# Implementation
+python ./GWAN_master/train_graph.py --model_name GWAN  --data_name XJTUSpurgearRadius --data_dir ./datasets/XJTUSpurgearRadius_constant.pkl
+
+
+# Citation
+
+GWAN:
+@ARTICLE{10079151,
+  author={Li, Tianfu and Sun, Chuang and Zhao, Zhibin and Liu, Tao and Chen, Xuefeng and Yan, Ruqiang},
+  journal={IEEE Transactions on Systems, Man and Cybernetics, Systems}, 
+  title={A Kolmogorov-Arnold-informed Interpretable Graph Wavelet Activation Network for Machine Fault Diagnosis}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={},
+  doi={10.1109/TSMC.2025.3647102}}
+
+
