@@ -9,7 +9,7 @@ At the core of MGLWN is a novel multi-hop graph lifting convolution, designed to
 
 
 # Implementation
-python ./MGLWN_master/train_graph.py --model_name MGLWN_master  --data_name THUGearboxRadius --data_dir r"./datasets/THUGearboxRadius.pkl"
+python ./MGLWN_master/train_graph.py --model_name MGLWN_master  --data_name THUGearboxRadius --data_dir r"./datasets/THUGearboxRadius_varLoad.pkl"
 
 
 # Citation
