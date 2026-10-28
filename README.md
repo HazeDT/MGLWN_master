@@ -7,9 +7,12 @@ This is the code library for the implementation of Multi-hop Graph Lifting Wavel
 # Note
 At the core of MGLWN is a novel multi-hop graph lifting convolution, designed to selectively fuse multi-scale features through a mixture-of-experts strategy. To power this convolution, two key mechanisms are incorporated: First, a multi-hop graph lifting decomposition scheme is proposed to construct computational trees for each node, effectively alleviating the structural information loss introduced by conventional graph lifting schemes. Second, a graph attention-based lifting operator is developed to parameterize the predictor and updater. This embedded attention mechanism enables the model to capture intrinsic topological dependencies by dynamically weighting neighboring nodes during the decomposition process.
 
+# Data
+ The demo dataset can be downloaded from google drive, [THUGearbox](https://drive.google.com/drive/folders/1eXBcidPjB_XJKYIcpqwCY1MBED5Mnmjd?usp=sharing)
 
 # Implementation
 python ./MGLWN_master/train_graph.py --model_name MGLWN_master  --data_name THUGearboxRadius --data_dir r"./datasets/THUGearboxRadius_varLoad.pkl"
+
 
 
 # Citation
