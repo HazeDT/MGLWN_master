@@ -1,31 +1,28 @@
 # MGLWN_master
-This is the code library for the implementation of Multi-hop Graph Lifting Wavelet Network[A Kolmogorov-Arnold-informed Interpretable Graph Wavelet Activation Network for Machine Fault Diagnosis](https://ieeexplore.ieee.org/document/11333912).
+This is the code library for the implementation of Multi-hop Graph Lifting Wavelet Network[MGLWN: An Interpretable Multi-hop Graph Lifting Wavelet Network with Mixture-of-Experts Fusion for Robust Fault Diagnosis](https://ieeexplore.ieee.org/document/11333912).
 
-![MGLWN-based-fault diagnosis](https://github.com/HazeDT/GWAN/blob/main/GWAN.jpg)
+![MGLWN-based-fault diagnosis](https://github.com/HazeDT/MGLWN_master/blob/main/MGLWN.png)
 
 
 # Note
-IIn GWAN, two critical components are designed, that is, graph wavelet activation convolution (GWAConv) layer and wavelet attention (WavAtt) layer. In GWAConv, the graph message passing is achieved using the wavelet Kolmogorov-Arnold layer with learnable scale and translation parameters to capture the robust fault features. While WavAtt layer decomposes the raw signal into low-frequency and high-frequency components to force the model to focus on the low-frequency components which is helpful for fault diagnosis.
-The wavelet Kolmogorov–Arnold layer in GWAN is from: [SWKAN: An Ante-Hoc and Post-Hoc Explainable Spectral Enhanced Wavelet Kolmogorov–Arnold Networks for Reliable Fault Diagnosis](https://ieeexplore.ieee.org/document/11298276).
+At the core of MGLWN is a novel multi-hop graph lifting convolution, designed to selectively fuse multi-scale features through a mixture-of-experts strategy. To power this convolution, two key mechanisms are incorporated: First, a multi-hop graph lifting decomposition scheme is proposed to construct computational trees for each node, effectively alleviating the structural information loss introduced by conventional graph lifting schemes. Second, a graph attention-based lifting operator is developed to parameterize the predictor and updater. This embedded attention mechanism enables the model to capture intrinsic topological dependencies by dynamically weighting neighboring nodes during the decomposition process.
 
-# sample data
-The data for running this code can be found in [PHMGNNBenchmark](https://github.com/HazeDT/PHMGNNBenchmark)
 
 # Implementation
-python ./GWAN_master/train_graph.py --model_name GWAN  --data_name XJTUSpurgearRadius --data_dir ./datasets/XJTUSpurgearRadius_constant.pkl
+python ./MGLWN_master/train_graph.py --model_name MGLWN_master  --data_name THUGearboxRadius --data_dir r"./datasets/THUGearboxRadius.pkl"
 
 
 # Citation
 
-GWAN:
-@ARTICLE{10079151,
-  author={Li, Tianfu and Sun, Chuang and Zhao, Zhibin and Liu, Tao and Chen, Xuefeng and Yan, Ruqiang},
-  journal={IEEE Transactions on Systems, Man and Cybernetics, Systems}, 
-  title={A Kolmogorov-Arnold-informed Interpretable Graph Wavelet Activation Network for Machine Fault Diagnosis}, 
+MGLWN:
+@ARTICLE{MGLWN,
+  author={Li, Tianfu and Li, Wenjun and Wang, Fujin and Sun, Chuang and Zhao, Zhibin and Yan, Ruqiang},
+  journal={IEEE Transactions on Industrial Informatics}, 
+  title={MGLWN: An Interpretable Multi-hop Graph Lifting Wavelet Network with Mixture-of-Experts Fusion for Robust Fault Diagnosis}, 
   year={2026},
   volume={},
   number={},
   pages={},
-  doi={10.1109/TSMC.2025.3647102}}
+  doi={}}
 
 
