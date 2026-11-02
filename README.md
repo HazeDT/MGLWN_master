@@ -26,6 +26,6 @@ MGLWN:
   volume={},
   number={},
   pages={},
-  doi={}}
+  doi={10.1109/TII.2026.3750143}}
 
 
