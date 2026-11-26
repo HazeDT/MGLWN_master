@@ -1,5 +1,5 @@
 # MGLWN_master
-This is the code library for the implementation of Multi-hop Graph Lifting Wavelet Network[MGLWN: An Interpretable Multi-hop Graph Lifting Wavelet Network with Mixture-of-Experts Fusion for Robust Fault Diagnosis](https://ieeexplore.ieee.org/document/11333912).
+This is the code library for the implementation of Multi-hop Graph Lifting Wavelet Network[MGLWN: An Interpretable Multi-hop Graph Lifting Wavelet Network with Mixture-of-Experts Fusion for Robust Fault Diagnosis](https://ieeexplore.ieee.org/document/11812630/).
 
 ![MGLWN-based-fault diagnosis](https://github.com/HazeDT/MGLWN_master/blob/main/MGLWN.png)
 
